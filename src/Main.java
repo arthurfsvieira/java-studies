@@ -1,4 +1,7 @@
 public class Main {
+
+    public static void main (String[] args){
+     /*
     //Variables
     int age = 28;
     String name = "Arthur";
@@ -21,6 +24,26 @@ public class Main {
 
     //Boolean
     //true or false
+    */
+
+        byte b = 100;
+        short s = 10000;
+        int i = 100000;
+        long l = 100000L;
+        float f= 10.5f;
+        double d = 20.5;
+        char c = 'A';
+        String str = "";
+        boolean bool = true;
+
+        if(str.equals("Arthur")) {
+            System.out.println("True");
+        } else if (str.isBlank()){
+            System.out.println("Arthur");
+        } else{
+            System.out.println("False");
+        }
+    }
 
 }
 
