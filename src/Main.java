@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main (String[] args){
@@ -36,13 +38,16 @@ public class Main {
         String str = "";
         boolean bool = true;
 
-        if(str.equals("Arthur")) {
-            System.out.println("True");
-        } else if (str.isBlank()){
-            System.out.println("Arthur");
-        } else{
-            System.out.println("False");
-        }
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Arthur");
+        names.add("Vampeta");
+        names.add("Jussara");
+
+        System.out.println(names.get(0));
+        names.remove(0);
+        names.remove("Vampeta");
+        System.out.println(names.getFirst());
+
     }
 
 }
