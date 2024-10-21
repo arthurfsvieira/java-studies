@@ -1,4 +1,6 @@
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
 
@@ -26,7 +28,7 @@ public class Main {
 
     //Boolean
     //true or false
-    */
+
 
         byte b = 100;
         short s = 10000;
@@ -44,9 +46,9 @@ public class Main {
         names.add("Jussara");
         names.add("Cleiton");
 
-/*        for (int a = 0; a < names.size(); a++) {
+        for (int a = 0; a < names.size(); a++) {
             System.out.println(names.get(a));
-        }*/
+        }
 
         for (String name : names) {
             System.out.println(name);
@@ -57,6 +59,11 @@ public class Main {
             System.out.println("Hi, this is a while loop");
             count++;
         }
+      */
+
+        String meuInt = "10";
+        int meuInt2 = Integer.parseInt(meuInt); // Transform into Integer Number
+        String meuInt3 = String.valueOf(meuInt2); //Transform into String again
 
     }
 
