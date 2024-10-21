@@ -42,14 +42,21 @@ public class Main {
         names.add("Arthur");
         names.add("Vampeta");
         names.add("Jussara");
+        names.add("Cleiton");
 
-        int[] inteiros = {1,2,3,4,5};
+/*        for (int a = 0; a < names.size(); a++) {
+            System.out.println(names.get(a));
+        }*/
 
-        System.out.println(names);
-        System.out.println("O tamanho do arrayList é de: " + (names.size()) + " itens.");
-        System.out.println(names.get(1));
+        for (String name : names) {
+            System.out.println(name);
+        }
 
-        System.out.println("O tamanho do array inteiros é de: " + (inteiros.length) + " itens.");
+        int count = 0;
+        while (count < 10) {
+            System.out.println("Hi, this is a while loop");
+            count++;
+        }
 
     }
 
