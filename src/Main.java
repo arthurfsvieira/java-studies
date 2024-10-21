@@ -18,7 +18,7 @@ public class Main {
     long
     //decimal number
     float
-    double
+    double (more precise)
 
     //Words and phrases
     //-String (Phrases and words) - "Jorgin me esmpresta a 12"
@@ -43,10 +43,13 @@ public class Main {
         names.add("Vampeta");
         names.add("Jussara");
 
-        System.out.println(names.get(0));
-        names.remove(0);
-        names.remove("Vampeta");
-        System.out.println(names.getFirst());
+        int[] inteiros = {1,2,3,4,5};
+
+        System.out.println(names);
+        System.out.println("O tamanho do arrayList é de: " + (names.size()) + " itens.");
+        System.out.println(names.get(1));
+
+        System.out.println("O tamanho do array inteiros é de: " + (inteiros.length) + " itens.");
 
     }
 
