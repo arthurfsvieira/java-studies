@@ -1,12 +1,17 @@
 public class Main {
     public static void main(String[] args){
-        Warrior archer = new Warrior();
+        Warrior archer = new Warrior("Garibald");
+        archer.Attack();
     }
 
 }
 
 class Warrior {
-    public Warrior(){
-        System.out.println("New warrior created!");
+    String name;
+    public Warrior(String name){
+        this.name = name;
+    }
+    public void Attack(){
+        System.out.println(this.name + " is attacking now!");
     }
 }
