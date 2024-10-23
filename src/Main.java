@@ -1,26 +1,32 @@
 public class Main {
     public static void main(String[] args){
-        Warrior archer = new Warrior("Garibald", 26);
-        Warrior goblin = new Warrior("Baruk", 50);
-        archer.Attack();
-        goblin.Attack();
+       Carro carro1 = new Carro ("Fiat", 2005);
+       Carro carro2 = new Carro ("BMW", 2002);
+       Carro carro3 = new Carro ("Mercedes", 2020);
+
+       carro1.Acelerar();
+       carro2.Acelerar();
+       carro3.Acelerar();
+
     }
 
 }
 
-class Warrior {
-    String name;
-    int damage;
-    public Warrior(String name, int damage){
-        this.name = name;
-        this.damage = damage;
-    }
-    public void Attack(){
-        if(this.damage > 30){
-            System.out.println(this.name + " is attacking now! Attack caused " + this.damage + " of damage! BRUTAL!!!" );
-        } else {
-            System.out.println(this.name + " is attacking now! Attack caused " + this.damage + " of damage!" );
-        }
+class Carro {
 
+    String modelo;
+    int ano;
+
+    public Carro (String modelo, int ano){
+        this.modelo = modelo;
+        this.ano = ano;
+    }
+
+    public void Acelerar(){
+        if(this.ano >= 2020) {
+            System.out.println("Você está acelerando o modelo " + this.modelo + ", ano " + this.ano + ". Este é o modelo mais recente!");
+        } else {
+            System.out.println("Você está acelerando o modelo " + this.modelo + ", ano " + this.ano);
+        }
     }
 }
