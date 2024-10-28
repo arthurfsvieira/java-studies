@@ -11,8 +11,14 @@ public class Main {
        Carro carro2 = new Jaguar();
 
        Humano meuSer = new Humano();
-       
-       meuSer.respirar();
+
+       Carro carroquebrado = null;
+
+       try{
+           carroquebrado.acelerar();
+       } catch (NullPointerException exception){
+           System.out.println("Desfazer do veículo.");
+       }
 
     }
 
