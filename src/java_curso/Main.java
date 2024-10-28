@@ -19,23 +19,6 @@ public class Main {
 
 }
 
-class Carro {
 
-    String modelo;
-    int ano;
-
-    public Carro (String modelo, int ano){
-        this.modelo = modelo;
-        this.ano = ano;
-    }
-
-    public void Acelerar(){
-        if(this.ano >= 2020) {
-            System.out.println("Você está acelerando o modelo " + this.modelo + ", ano " + this.ano + ". Este é o modelo mais recente!");
-        } else {
-            System.out.println("Você está acelerando o modelo " + this.modelo + ", ano " + this.ano);
-        }
-    }
-}
 
 //Next steps:Learn Modifiers
