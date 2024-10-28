@@ -1,9 +1,9 @@
 package java_curso;
 
-public class Mercedes implements Carro{
+public class Jaguar implements Carro{
     @Override
     public void acelerar() {
-        System.out.println("Acelerando à 30km/h.");
+        System.out.println("Acelerando à 100km/h.");
     }
 
     @Override

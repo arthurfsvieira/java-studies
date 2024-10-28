@@ -7,13 +7,11 @@ package java_curso;
 
 public class Main {
     public static void main(String[] args){
-       Carro carro1 = new Carro ("Fiat", 2005);
-       Carro carro2 = new Carro ("BMW", 2002);
-       Carro carro3 = new Carro ("Mercedes", 2020);
+       Carro carro1 = new Mercedes ();
+       Carro carro2 = new Jaguar();
 
-       carro1.Acelerar();
-       carro2.Acelerar();
-       carro3.Acelerar();
+       carro1.acelerar();
+       carro2.acelerar();
 
     }
 
