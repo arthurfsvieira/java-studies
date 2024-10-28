@@ -10,8 +10,9 @@ public class Main {
        Carro carro1 = new Mercedes ();
        Carro carro2 = new Jaguar();
 
-       carro1.acelerar();
-       carro2.acelerar();
+       Humano meuSer = new Humano();
+       
+       meuSer.respirar();
 
     }
 
