@@ -1,29 +1,26 @@
 package java_curso;
 
-//public -> Acessível em todo o projeto.
-// default -> Padrão quando não definimos nada.
-// private -> Acessível somente dentro da classe em que foi construido.
-// protected -> Acessível em todo o pacote.
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-       Carro carro1 = new Mercedes ();
-       Carro carro2 = new Jaguar();
+        Scanner sc = new Scanner(System.in);
+        int hora;
 
-       Humano meuSer = new Humano();
+        System.out.println("Quantas horas são?");
+        hora = sc.nextInt();
 
-       Carro carroquebrado = null;
+        if (hora < 12) {
+            System.out.println("Bom dia!");
+        } else {
+            if (hora < 18) {
+                System.out.println("Boa tarde!");
+            } else {
+                System.out.println("Boa noite!");
+            }
+        }
 
-       try{
-           carroquebrado.acelerar();
-       } catch (NullPointerException exception){
-           System.out.println("Desfazer do veículo.");
-       }
-
+        sc.close();
     }
-
 }
 
-
-
-//Next steps:Learn Modifiers
