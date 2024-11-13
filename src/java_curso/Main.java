@@ -6,18 +6,26 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite um número:");
-        int a = sc.nextInt();
-        System.out.println("Digite outro número:");
-        int b = sc.nextInt();
+        System.out.println("Qual código do produto?");
+        int codigo = sc.nextInt();
+        System.out.println("Qual a quantidade?");
+        int quantidade = sc.nextInt();
 
+        double total;
 
-        if (a % b == 0 || b % a == 0) {
-            System.out.println("São múltiplos");
+        if (codigo == 1) {
+            total = quantidade * 4.0;
+        } else if (codigo == 2) {
+            total = quantidade * 4.50;
+        } else if (codigo == 3) {
+            total = quantidade * 5.0;
+        } else if (codigo == 4) {
+            total = quantidade * 2.0;
         } else {
-            System.out.println("Não são múltiplos.");
+            total = quantidade * 1.5;
         }
 
+        System.out.printf("Total: R$ %.2f%n", total);
 
         sc.close();
 
