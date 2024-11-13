@@ -10,10 +10,10 @@ public class Main {
         System.out.println("Digite um número:");
         numero = sc.nextInt();
 
-        if (numero >= 0) {
-            System.out.println("Não é negativo.");
+        if (numero % 2 == 0) {
+            System.out.println("PAR");
         } else {
-            System.out.println("É negativo.");
+            System.out.println("IMPAR");
         }
 
 
