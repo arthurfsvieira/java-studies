@@ -5,22 +5,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int hora;
+        int numero;
 
-        System.out.println("Quantas horas são?");
-        hora = sc.nextInt();
+        System.out.println("Digite um número:");
+        numero = sc.nextInt();
 
-        if (hora < 12) {
-            System.out.println("Bom dia!");
+        if (numero >= 0) {
+            System.out.println("Não é negativo.");
         } else {
-            if (hora < 18) {
-                System.out.println("Boa tarde!");
-            } else {
-                System.out.println("Boa noite!");
-            }
+            System.out.println("É negativo.");
         }
 
+
         sc.close();
+
     }
 }
 
