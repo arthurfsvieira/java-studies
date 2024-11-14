@@ -6,15 +6,21 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Qual valor da conta?");
-        int minutos = sc.nextInt();
-        double conta = 50.0;
+        System.out.println("Qual dia da semana?");
+        String dia = sc.nextLine();
 
-        if (minutos > 100) {
-            conta = conta + (minutos - 100) * 2.0;
+        switch(dia){
+            case "Segunda":
+                System.out.println("Segunda feira de novo? Todo semana isso? Fogo.");
+                break;
+            case "Sexta":
+                System.out.println("Hoje é dia de farra, pinga e foguete!");
+                break;
+            default:
+                System.out.println("Dia comum. Tudo ok por aqui.");
+                break;
         }
 
-        System.out.printf("O valor da conta é de R$ %.2f%n ", conta);
         sc.close();
 
     }
