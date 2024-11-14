@@ -6,21 +6,15 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Qual horário começou?");
-        int inicio = sc.nextInt();
-        System.out.println("Qual horário terminou?");
-        int fim = sc.nextInt();
+        System.out.println("Qual valor da conta?");
+        int minutos = sc.nextInt();
+        double conta = 50.0;
 
-        int duracao;
-
-        if (inicio < fim) {
-            duracao = fim - inicio;
-        } else {
-            duracao = 24 - inicio + fim;
+        if (minutos > 100) {
+            conta = conta + (minutos - 100) * 2.0;
         }
 
-        System.out.printf("O jogo durou " + duracao + " horas.");
-
+        System.out.printf("O valor da conta é de R$ %.2f%n ", conta);
         sc.close();
 
     }
