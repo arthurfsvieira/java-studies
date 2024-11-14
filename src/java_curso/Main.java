@@ -6,30 +6,22 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Qual código do produto?");
-        int codigo = sc.nextInt();
-        System.out.println("Qual a quantidade?");
-        int quantidade = sc.nextInt();
+        System.out.println("Qual horário começou?");
+        int inicio = sc.nextInt();
+        System.out.println("Qual horário terminou?");
+        int fim = sc.nextInt();
 
-        double total;
+        int duracao;
 
-        if (codigo == 1) {
-            total = quantidade * 4.0;
-        } else if (codigo == 2) {
-            total = quantidade * 4.50;
-        } else if (codigo == 3) {
-            total = quantidade * 5.0;
-        } else if (codigo == 4) {
-            total = quantidade * 2.0;
+        if (inicio < fim) {
+            duracao = fim - inicio;
         } else {
-            total = quantidade * 1.5;
+            duracao = 24 - inicio + fim;
         }
 
-        System.out.printf("Total: R$ %.2f%n", total);
+        System.out.printf("O jogo durou " + duracao + " horas.");
 
         sc.close();
 
     }
 }
-
-//Aula 38
