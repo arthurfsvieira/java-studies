@@ -5,25 +5,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
 
-        System.out.println("Qual dia da semana?");
-        String dia = sc.nextLine();
+        int soma = 0;
 
-        switch(dia){
-            case "Segunda":
-                System.out.println("Segunda feira de novo? Todo semana isso? Fogo.");
-                break;
-            case "Sexta":
-                System.out.println("Hoje é dia de farra, pinga e foguete!");
-                break;
-            default:
-                System.out.println("Dia comum. Tudo ok por aqui.");
-                break;
+        while (x != 0) {
+            soma = soma + x;
+            x = sc.nextInt();
         }
+        System.out.println(soma);
 
         sc.close();
 
     }
 }
-//aula 45
-//repetição 
