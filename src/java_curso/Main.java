@@ -5,18 +5,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
+        int senha = sc.nextInt();
 
-        int soma = 0;
-
-        while (x != 0) {
-            soma = soma + x;
-            x = sc.nextInt();
+        while (senha != 2002) {
+            System.out.println("Senha inválida");
+            senha = sc.nextInt();
         }
-        System.out.println(soma);
+        System.out.println("Acesso liberado.");
 
         sc.close();
 
     }
 }
-//aula 46
