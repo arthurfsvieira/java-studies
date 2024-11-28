@@ -7,19 +7,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        int in = 0;
-        int out = 0;
-
         for (int i=0; i<n; i++){
             int x = sc.nextInt();
-            if (x >= 10 && x <= 20) {
-                in++;
+            int y = sc.nextInt();
+
+            if (y == 0) {
+                System.out.println("divisao impossivel");
             } else {
-                out++;
+                double div = (double) x/y;
+                System.out.printf("%.1f%n", div);
             }
         }
-        System.out.println(in + " in");
-        System.out.println(out + " out");
 
         sc.close();
 
