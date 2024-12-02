@@ -3,24 +3,44 @@ package java_curso;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+    public static void main(String[] args) {
 
-        for (int i=0; i<n; i++){
-            int x = sc.nextInt();
-            int y = sc.nextInt();
+        for (int i = 0; i<5 ;i++) {
 
-            if (y == 0) {
-                System.out.println("divisao impossivel");
-            } else {
-                double div = (double) x/y;
-                System.out.printf("%.1f%n", div);
+            switch(i) {
+
+                case 0:
+
+                    System.out.print("v ");
+
+                    break;
+
+                case 1:
+
+                    System.out.print("w ");
+
+                case 2:
+
+                    System.out.print("x ");
+
+                    break;
+
+                case 3:
+
+                    System.out.print("y ");
+
+                case 4:
+
+                    System.out.print("z ");
+
+                    break;
+
+                default: System.out.print("d ");
+
             }
+
         }
 
-        sc.close();
-
     }
+
 }
-// aula 47 - Estruturas de repetição;
