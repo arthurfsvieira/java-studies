@@ -5,43 +5,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        for (int i = 0; i<5 ;i++) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
 
-            switch(i) {
-
-                case 0:
-
-                    System.out.print("v ");
-
-                    break;
-
-                case 1:
-
-                    System.out.print("w ");
-
-                case 2:
-
-                    System.out.print("x ");
-
-                    break;
-
-                case 3:
-
-                    System.out.print("y ");
-
-                case 4:
-
-                    System.out.print("z ");
-
-                    break;
-
-                default: System.out.print("d ");
-
+        for (int i=1; i<=x; i++){
+            if (i % 2 != 0) {
+                System.out.println(i);
             }
-
         }
 
-    }
+        sc.close();
 
+    }
 }
-//exercicios aula 2
