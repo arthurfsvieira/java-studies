@@ -6,18 +6,16 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        char resp;
+        do {
+            System.out.print("Digite a temperatura em Celsius: ");
+            double C = sc.nextDouble();
+            double F = 9.0 * C / 5.0 + 32.0;
+            System.out.printf("Equivalente em Fahrenheit: %.1f%n", F);
+            System.out.print("Deseja repetir? (s/n) ");
+            resp = sc.next().charAt(0);
+        } while (resp != 'n');
 
-        int n = sc.nextInt();
-
-        for (int i=1; i<=n; i++) {
-
-            int primeiro = i;
-            int segundo = i * i;
-            int terceiro = i * i * i;
-
-            System.out.printf("%d %d %d%n", primeiro, segundo, terceiro);
-
-        }
 
         sc.close();
 
