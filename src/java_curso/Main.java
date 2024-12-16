@@ -9,13 +9,15 @@ public class Main {
 
         int n = sc.nextInt();
 
-        int fat = 1;
-
         for (int i=1; i<=n; i++) {
-            fat = fat * i;
+
+            int primeiro = i;
+            int segundo = i * i;
+            int terceiro = i * i * i;
+
+            System.out.printf("%d %d %d%n", primeiro, segundo, terceiro);
 
         }
-        System.out.println(fat);
 
         sc.close();
 
