@@ -4,16 +4,35 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+//entrada de 3 numeros, criacao de 2 funcoes.
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter three numbers: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
 
-        String s = "apple orange potato pineapple";
+        int higher = max(a, b, c);
 
-        String[] vect = s.split(" ");
+        showResult(higher);
 
-        System.out.println(vect[0]);
-        System.out.println(vect[1]);
-        System.out.println(vect[2]);
-        System.out.println(vect[3]);
-
+        sc.close();
     }
+//funcao que armazena o resultado da logica
+    public static int max(int x,int y,int z) {
+        int res;
+        if (x > y && x > z){
+            res = x;
+        } else if (y > z) {
+            res = y;
+        } else {
+            res = z;
+        }
+        return res;
+    }
+//funcao que mostra o resultado
+    public static void showResult(int value){
+        System.out.println("Higher is: " + value);
+    }
+
 }
